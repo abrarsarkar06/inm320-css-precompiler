@@ -1,0 +1,1 @@
+document.querySelector( '#footer-copyright' ).innerHTML = `&copy; ${new Date().getFullYear()} Dreamla - All Rights Reserved.`;

@@ -1,0 +1,16 @@
+{
+  "name": "inm320-css-precompiler",
+  "version": "1.0.0",
+  "private": true,
+  "description": "INM320 responsive stylesheet compiled from Sass",
+  "scripts": {
+    "build": "sass src/scss/style.scss public/assets/css/style.css",
+    "watch:css": "sass --watch src/scss/style.scss:public/assets/css/style.css",
+    "serve": "node scripts/serve.js",
+    "dev": "concurrently --kill-others \"npm:watch:css\" \"npm:serve\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "sass": "^1.89.2"
+  }
+}
